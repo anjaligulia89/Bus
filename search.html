@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bus</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .search{
+            height:100vh;
+            background-image: linear-gradient(rgba(0,8,51,0.7),rgba(0,8,51,0.5)),url(images/login5.jpg);
+            background-size: cover;
+            background-position: center;
+            display:flex ;
+            justify-content:center;
+            align-items: center;
+        
+        }
+        h1{
+            color:#fff;
+            margin-bottom: 70px;
+            font-size:45px;
+            letter-spacing:2px;
+            text-align:center;
+            font-family: sans-serif;
+        }
+        .form-box{
+            width:130%;
+            
+            background: rgba(255,255,255,0.2);
+            display:flex;
+            flex:1;
+           
+            align-items: center;
+            border-radius: 50px;
+            backdrop-filter: blur(4px) saturate(180%);
+            padding:10px 20px;  
+         
+        }
+        .search-feild{
+            height: 19px;
+            padding:20px;
+            border:none;
+            border-radius: 50px;
+            color:#000;
+            outline: none;
+            flex:1;
+            padding:24px 20px;
+            background-color: rgb(207, 213, 253);
+            
+        }
+        .business{
+            width:250px; 
+         }
+        .location{
+            width:250px;  
+        }
+        ::placeholder{
+            color:rgb(61, 60, 60);
+            font-size: 20px;
+        }
+        .search-btn{
+            height:60px;
+            width:60px;
+            background:#ffeb3b;
+            border:none;
+            border-radius: 50px;
+            cursor:pointer;
+            
+        }
+        .search-btn img{
+            width:25px;
+            
+        }
+        .search-btn:hover{
+            background: #ffc107;
+            cursor:pointer;
+            
+        
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="search">
+        <form>
+            <h1>Find Bus</h1>
+            <div class="form-box">
+                <input type="text" class="search-feild business" placeholder="From">
+                <input type="text" class="search-feild location" placeholder="To">
+                <button class="search-btn" type="submit"><img src="images/search.png"></button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
